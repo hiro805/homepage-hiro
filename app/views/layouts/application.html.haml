@@ -1,0 +1,18 @@
+!!!
+%html 
+  %head
+    %meta{content: "text/html; charset=UTF-8", http: {equiv: "Content-Type"}}
+    %title Portfolio
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"}
+    %script{src: "https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.js"}
+    %script{src: "https://rawgit.com/kimmobrunfeldt/progressbar.js/master/dist/progressbar.min.js"}
+    %link{href: "https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Caveat", rel: "stylesheet"}/
+    %link{href: "https://fonts.googleapis.com/css?family=Homemade+Apple", rel: "stylesheet"}/
+
+  %body
+    = yield
