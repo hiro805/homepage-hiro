@@ -1,0 +1,56 @@
+%body
+  %header.header
+    %p Hello, I am Hiro
+    %ul
+      %li= image_tag("/IMG_0351 3.jpeg")
+      %li= image_tag("/IMG_0352.jpeg")
+      %li= image_tag("/IMG_1049 3.jpeg")
+      %li= image_tag("/IMG_1045.jpeg")
+      %li= image_tag("/IMG_1258.jpg")
+
+
+  %section#about.about
+    %h1 PROFILE
+    %p.main-p はじめまして。私のページをご覧頂きありがとうございます。長野浩士（ながのひろし）と申します。
+    %p.main-p2 美容師として8年間勤めておりました。自分のスキルアップのため、そのうち一年はカナダで過ごしました。
+    %p.main-p3 帰国後は現地で身につけた英語でのコミュニケーションを活かすためにホテルでの受付業務に携わり、たくさんの外国人観光客を応対させて頂き、現地で学んだ事を充分に活かす事ができたと実感しております。
+    %p.main-p4 今はweb系エンジニアの仕事を探しております。美容師はヘアスタイルを創りあげ、それを一人一人のお客様に提供する。
+    %p.main-p5 webエンジニアもまた、アプリやシステムを制作しそれをお客様に納品する。意外にも似ているのではないかと感じました。
+    %p.main-p6 現代の生活において、誰もが何かしらのアプリやシステム使いながら日常を過ごしています。そんな誰かの日常生活に自分も役に立ちたいなと思いました。
+    %p.main-p7 もともと何かを作る事が好きな私。この業界にも是非とも挑戦してみたいと思いました。
+
+
+  %section.works
+    %h1 MY WORKS
+    %ul
+      %li.chat-space= image_tag("/chat-space.png")
+      %p.chat-space__label
+        = link_to "chat-space", "http://54.178.250.141/"
+      %li.mercari= image_tag("/mercari.png")
+      %p.mercari__label
+        = link_to "mercari", "http://18.179.224.213/"
+  %section#contact.contact
+    = image_tag("/IMG_0480.jpeg")
+    .info-box
+    .info-box__pic
+      = image_tag("/IMG_0598.JPG")
+    .skill
+      .can-do
+        %p What I can do 
+      .logos
+        = image_tag("/html-logo.png") 
+        = image_tag("/css.png")
+        = image_tag("/ruby-logo.png")
+        = image_tag("/rails_logo.png")
+      .logos-2
+        = image_tag("/js-logo.png") 
+        = image_tag("/jquery-logo.png")
+        = image_tag("/GitHub-logo.png")
+        = image_tag("/AWS-logo.jpeg")
+        
+    .profile
+      %p.name ~ Hiroshi Nagano ~
+      %p.from [ Hometown ]：京都府長岡京市
+      %p.like [ What I like ]：テニス・海外旅行・英語での外国の方とのコミュニケーション・ゲーム（ドラクエ・FF・無双シリーズ・スパロボ etc)・洋楽やアニメも好きです。
+      %p.comment プログラミングは自分にとって決して簡単なものではなく、むしろ挑戦的な分野であります。しかしそれと同時に、やっているとおもしろくて夢中になれるものでもある所が大変魅力的だと感じています。現在は習った言語をさらに理解できる様に日々奮闘中です。また他の言語もこれからどんどん勉強していきたいと思っています！テクノロジーの発展が著しい今日において、常に何かに挑戦し、成長を続けていく姿勢が大事だと強く感じます。
+
