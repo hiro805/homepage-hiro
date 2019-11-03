@@ -1,3 +1,314 @@
-// Place all the styles related to the homes controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// .header {
+//   height: 100vh;
+//   position: relative;
+//   img {
+//     height:100vh;
+//     width: 100%;
+//   }
+//   p {
+//     position: absolute;
+//     bottom: -120px;
+//     left: 350px;
+//     font-size: 100px;
+//     font-family: fantasy;
+//     color: #ffffff;
+//     z-index: 100;
+//   }
+//   #photo {
+//     width: 100%;
+//     height: 100vh;
+//     margin: 0 auto;
+//     text-align: left;
+//     overflow: hidden;
+//     position: relative;
+
+//   }
+//   #photo img {
+//     top: 0;
+//     left: 0;
+//     position: absolute;
+//   }
+// }
+
+
+
+@mixin bp {
+  @media only screen and (max-width: 100%) {
+    @content;
+  }
+}
+.header {
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  p {
+    position: absolute;
+    bottom: -70px;
+    left: 350px;
+    font-size: 100px;
+    font-family: serif;
+    color: #ffffff;
+    z-index: 200;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      background-size: cover;
+      width: 100%;
+      height: 1100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation-iteration-count: infinite;
+      animation-duration: 40s;
+      @for $value from 1 through 5 {
+        &:nth-child(#{$value}) {
+          // background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/381167/animal#{$value}.jpg");
+          @if $value % 2 == 0 {
+            //偶数
+            animation-name: slider-zoomout;
+          }
+          @else {
+            //奇数
+            animation-name: slider-zoomin;
+          }
+          @if $value != 1 {
+            //最初以外は透過
+            opacity: 0;
+          }
+          animation-delay: #{($value*8-11)}s; //-3からスタートして、8づつ加算する
+        }
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+ 
+  @include bp {
+    height: 100vh;
+    ul {
+      li {
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+// 5~8秒の間だけ透過解除
+@keyframes slider-zoomin {
+  0% {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+  12.5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  27.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.3);
+  }
+}
+@keyframes slider-zoomout {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  12.5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  27.5% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+}
+
+
+.about {
+  height: 100vh;
+  background-color: #ffffff;
+  h1 {
+    margin: 0 500px 50px;
+    padding: 50px 50px 0 50px;
+    font-size: 75px;
+    border-bottom: double 4px #999;
+    font-family: 'Vollkorn', serif;
+  }
+  p {
+    margin: 40px 140px;
+    font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  }
+}
+
+
+.works {
+  height: 100vh;
+  background-color: #383634;
+  h1 {
+    margin: 0 440px 50px;
+    padding: 50px 50px 0 50px;
+    font-size: 75px;
+    color:#ffffff;
+    border-bottom: double 4px #999;
+    font-family: 'Vollkorn', serif;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    .chat-space {
+      position: relative;
+      left: 300px;
+      width: 400px;
+      height: 350px;
+      img {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+      }
+    }
+    .chat-space__label {
+      position: absolute;
+      bottom: -50px;
+      left: 380px;
+      font-size: 40px;
+
+    }
+    .mercari {
+      position: relative;
+      left: 350px;
+      width: 400px;
+      height: 350px;
+      img {
+        position: absolute;
+        width: 80%;
+        height: 80%;
+      }
+    }
+    .mercari__label {
+      position: absolute;
+      bottom: -50px;
+      right: 420px;
+      font-size: 40px;
+    }
+    p {
+      font-family: 'Vollkorn', serif;
+    }
+    a {
+      color: #ffffff;
+    }
+  }
+}
+
+
+
+.contact {
+  height: 100vh;
+  background-color: rgba(25, 25, 120, 0.9);
+  position: relative;
+  img {
+    width: 100%;
+    height: 100vh;
+  }
+  .info-box {
+    width: 80%;
+    height: 90vh;
+    background-color: #383634;
+    opacity: 0.7;
+    position: absolute;
+    top: 50px;
+    left: 140px;
+  }
+  .info-box__pic {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    width: 15%;
+    height: 38%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .skill {
+    position: absolute;
+    width: 50%;
+    height: 38%;
+    top: 80px;
+    right: 200px;
+    .can-do {
+      width: 100%;
+      height: 20%;
+      font-family: 'Vollkorn', serif;
+      font-size: 30px;
+      color: #ffffff;
+       p {
+         margin: 0 100px;
+       }
+    }
+    .logos {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      img {
+        width: 20%;
+        height: 85%;
+        margin: 0 20px;
+      }
+    }
+    .logos-2 {
+      width: 100%;
+      height: 40%;
+      display: flex;
+      img {
+        width: 20%;
+        height: 85%;
+        margin: 0 20px;
+      }
+    }
+  }
+  .profile {
+    width: 77%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 170px;
+     p {
+       font-size: 30px;
+       font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+       color: #ffffff;
+     }
+     .name {
+       width: 100%;
+       margin: 0 450px;
+     }
+     .from {
+       font-size: 20px;
+       margin: 0 78px;
+     }
+     .like {
+      font-size: 20px;
+      margin: 40px 78px;
+     }
+     .comment {
+      font-size: 16px;
+      margin: 0 78px;
+     }
+  }
+  
+}
