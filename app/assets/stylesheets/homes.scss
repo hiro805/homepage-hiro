@@ -1,37 +1,3 @@
-// .header {
-//   height: 100vh;
-//   position: relative;
-//   img {
-//     height:100vh;
-//     width: 100%;
-//   }
-//   p {
-//     position: absolute;
-//     bottom: -120px;
-//     left: 350px;
-//     font-size: 100px;
-//     font-family: fantasy;
-//     color: #ffffff;
-//     z-index: 100;
-//   }
-//   #photo {
-//     width: 100%;
-//     height: 100vh;
-//     margin: 0 auto;
-//     text-align: left;
-//     overflow: hidden;
-//     position: relative;
-
-//   }
-//   #photo img {
-//     top: 0;
-//     left: 0;
-//     position: absolute;
-//   }
-// }
-
-
-
 @mixin bp {
   @media only screen and (max-width: 100%) {
     @content;
@@ -67,7 +33,6 @@
       animation-duration: 40s;
       @for $value from 1 through 5 {
         &:nth-child(#{$value}) {
-          // background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/381167/animal#{$value}.jpg");
           @if $value % 2 == 0 {
             //偶数
             animation-name: slider-zoomout;
@@ -170,10 +135,11 @@
     border-bottom: double 4px #999;
     font-family: 'Vollkorn', serif;
   }
-  ul {
+  .works-box {
     display: flex;
     list-style: none;
     position: relative;
+    height: 50%;
     .chat-space {
       position: relative;
       left: 300px;
@@ -181,17 +147,20 @@
       height: 350px;
       img {
         position: absolute;
-        width: 80%;
-        height: 80%;
+        width: 60%;
+        height: 60%;
       }
-    }
     .chat-space__label {
+      width: 55%;
+      height: 40%;
       position: absolute;
-      bottom: -50px;
-      left: 380px;
+      bottom: 0;
+      left: 10px;
       font-size: 40px;
-
+      font-family: 'Vollkorn', serif;
     }
+  }
+
     .mercari {
       position: relative;
       left: 350px;
@@ -199,18 +168,27 @@
       height: 350px;
       img {
         position: absolute;
-        width: 80%;
-        height: 80%;
+        width: 60%;
+        height: 60%;
       }
-    }
-    .mercari__label {
-      position: absolute;
-      bottom: -50px;
-      right: 420px;
-      font-size: 40px;
-    }
-    p {
-      font-family: 'Vollkorn', serif;
+      .mercari__label {
+        width: 55%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        font-size: 40px;
+        font-family: 'Vollkorn', serif;
+      }
+      .password {
+        position: absolute;
+        bottom: 0;
+        left: 30px;
+        width: 55%;
+        height: 20%;
+        color: #ffffff;
+        font-family: 'Vollkorn', serif;
+      }
     }
     a {
       color: #ffffff;
