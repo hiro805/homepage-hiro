@@ -21,13 +21,19 @@
 
   %section.works
     %h1 MY WORKS
-    %ul
-      %li.chat-space= image_tag("/chat-space.png")
-      %p.chat-space__label
-        = link_to "chat-space", "http://54.178.250.141/"
-      %li.mercari= image_tag("/mercari.png")
-      %p.mercari__label
-        = link_to "mercari", "http://18.179.224.213/"
+    .works-box
+      .chat-space
+        .chat-space__photo= image_tag("/chat-space.png")
+        .chat-space__label 
+          = link_to "chat-space", "http://54.178.250.141/" 
+      .mercari
+        .mercari__photo= image_tag("/mercari.png")
+        .mercari__label 
+          = link_to "mercari", "http://18.179.224.213/" 
+        .password
+          user名：49_mercari_wb pass：49wb
+
+
   %section#contact.contact
     = image_tag("/IMG_0480.jpeg")
     .info-box
