@@ -5,7 +5,6 @@
 }
 
  
-
 .header {
   height: 100vh;
   margin: 0 auto;
@@ -112,7 +111,7 @@
   background-color: #ffffff;
   overflow: hidden;
   h1 {
-    margin: 0 500px 50px;
+    text-align: center;
     padding: 50px 50px 0 50px;
     font-size: 75px;
     border-bottom: double 4px #999;
@@ -130,7 +129,7 @@
   background-color: #383634;
   overflow: hidden;
   h1 {
-    margin: 0 440px 50px;
+    text-align: center;
     padding: 50px 50px 0 50px;
     font-size: 75px;
     color:#ffffff;
@@ -151,6 +150,7 @@
         position: absolute;
         width: 60%;
         height: 60%;
+        object-fit: cover;
       }
     .chat-space__label {
       width: 55%;
@@ -172,6 +172,7 @@
         position: absolute;
         width: 60%;
         height: 60%;
+        object-fit: cover;
       }
       .mercari__label {
         width: 55%;
@@ -226,6 +227,7 @@
     img {
       width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
   .skill {
