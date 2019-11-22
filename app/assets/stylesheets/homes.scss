@@ -114,6 +114,7 @@
   height: 100vh;
   background-color: #ffffff;
   overflow: hidden;
+  overflow: scroll;
   h1 {
     text-align: center;
     padding: 50px 50px 0 50px;
@@ -132,6 +133,7 @@
   height: 100vh;
   background-color: #383634;
   overflow: hidden;
+  overflow: scroll;
   h1 {
     text-align: center;
     padding: 50px 50px 0 50px;
@@ -277,6 +279,7 @@
     position: absolute;
     bottom: 0;
     right: 170px;
+    overflow: scroll;
      p {
        font-size: 30px;
        font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
