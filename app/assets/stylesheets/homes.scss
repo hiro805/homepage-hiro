@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 @mixin bp {
   @media only screen and (max-width: 100%) {
     @content;
@@ -307,7 +311,7 @@
     overflow: hidden;
     p {
       position: absolute;
-      bottom: -70px;
+      bottom: 100px;
       left: 100px;
       font-size: 100px;
       font-family: serif;
@@ -406,16 +410,20 @@
     background-color: #ffffff;
     overflow: hidden;
     h1 {
-      margin: 0 280px 50px;
-      padding: 50px 50px 0 50px;
+      position: relative;
+      top: 600px;
       font-size: 75px;
       border-bottom: double 4px #999;
       font-family: 'Vollkorn', serif;
     }
-    p {
-      margin: 40px 140px;
-      font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-    }
+    .text {
+      position: relative;
+      top: 700px;
+      p {
+        margin: 40px 140px;
+        font-family: 'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+      }
+  }
   }
   
   
@@ -424,8 +432,8 @@
     background-color: #383634;
     overflow: hidden;
     h1 {
-      margin: 0 210px 50px;
-      padding: 50px 50px 0 50px;
+      position: relative;
+      top: 600px;
       font-size: 75px;
       color:#ffffff;
       border-bottom: double 4px #999;
@@ -436,6 +444,7 @@
       list-style: none;
       position: relative;
       height: 50%;
+      top: 700px;
       .chat-space {
         position: relative;
         left: 150px;
@@ -508,15 +517,15 @@
       background-color: #383634;
       opacity: 0.7;
       position: absolute;
-      top: 50px;
+      top: 90px;
       left: 100px;
     }
     .info-box__pic {
       position: absolute;
-      top: 130px;
+      top: 350px;
       left: 150px;
       width: 18%;
-      height: 25%;
+      height: 20%;
       img {
         width: 100%;
         height: 100%;
@@ -535,16 +544,17 @@
         font-size: 30px;
         color: #ffffff;
          p {
-           margin: 0 50px;
+           margin: 120px 50px 0 50px;
          }
       }
       .logos {
         width: 90%;
         height: 30%;
+        margin-left: 70px;
         display: flex;
         img {
-          width: 20%;
-          height: 85%;
+          width: 25%;
+          height: 60%;
           margin: 0 20px;
         }
       }
@@ -553,8 +563,8 @@
         height: 30%;
         display: flex;
         img {
-          width: 20%;
-          height: 85%;
+          width: 25%;
+          height: 60%;
           margin: 0 20px;
         }
       }
