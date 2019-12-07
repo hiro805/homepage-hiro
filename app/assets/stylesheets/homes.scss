@@ -469,329 +469,329 @@
 
 
 
-// @media screen and (max-height:900px)and(max-width:420px){
-//   .header {
-//     p {
-//       width: 300px;
-//       height: 40px;
-//       font-size: 35px;
-//       top: 300px;
-//       left: 50px;
-//     }
-//     ul {
-//       li {
-//         height: 0;
-//       }
-//     }
-//   }
+@media screen and (max-height:900px)and(max-width:420px){
+  .header {
+    p {
+      width: 300px;
+      height: 40px;
+      font-size: 35px;
+      top: 300px;
+      left: 50px;
+    }
+    ul {
+      li {
+        height: 0;
+      }
+    }
+  }
 
-//   .about {
-//     h1 {
-//       font-size: 35px;
-//     }
-//     p {
-//       font-size: 13px;
-//       margin: 20px 30px;
-//     }
-//     .text {
-//       margin-top: 60px;
-//     }
-//   }
+  .about {
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 13px;
+      margin: 20px 30px;
+    }
+    .text {
+      margin-top: 60px;
+    }
+  }
 
-//   .works {
-//     h1 {
-//       font-size: 35px;
-//     }
-//     .works-box {
-//       height: 80%;
-//       .chat-space {
-//         width: 200px;
-//         height: 220px;
-//         top: 40px;
-//         left: 100px;
-//         img {
-//           width: 100%;
-//           height: 70%;
-//         }
-//         .chat-space__label{
-//           top: 160px;
-//           left: 40px;
-//           width: 100%;
-//           font-size: 25px;
-//         }
-//       }
-//       .mercari {
-//         width: 200px;
-//         height: 220px;
-//         top: 300px;
-//         left: -100px;
-//         img {
-//           width: 100%;
-//           height: 70%;
-//         }
-//         .mercari__label {
-//           left: 50px;
-//           bottom: -30px;
-//           font-size: 25px;
-//         }
-//         .password {
-//           width: 100%;
-//           bottom: -30px;
-//         }
-//       }
-//     }
-//   }
+  .works {
+    h1 {
+      font-size: 35px;
+    }
+    .works-box {
+      height: 80%;
+      .chat-space {
+        width: 200px;
+        height: 220px;
+        top: 40px;
+        left: 100px;
+        img {
+          width: 100%;
+          height: 70%;
+        }
+        .chat-space__label{
+          top: 160px;
+          left: 40px;
+          width: 100%;
+          font-size: 25px;
+        }
+      }
+      .mercari {
+        width: 200px;
+        height: 220px;
+        top: 300px;
+        left: -100px;
+        img {
+          width: 100%;
+          height: 70%;
+        }
+        .mercari__label {
+          left: 50px;
+          bottom: -30px;
+          font-size: 25px;
+        }
+        .password {
+          width: 100%;
+          bottom: -30px;
+        }
+      }
+    }
+  }
 
-//   .contact {
-//     .info-box {
-//       left: 40px;
-//     }
-//     .info-box__pic {
-//       top: 400px;
-//       left: 170px;
-//       width: 18%;
-//       height: 15%;
-//     }
-//     .skill {
-//       .can-do {
-//         width: 500px;
-//         position: absolute;
-//         top: -20px;
-//       }
-//       .logos {
-//         position: absolute;
-//         right: -100px;
-//         width: 90%;
-//         height: 20%;
-//       }
-//       .logos-2 {
-//         position: absolute;
-//         top: 80px;
-//         left: -30px;
-//         width: 90%;
-//         height: 20%;
-//       }
-//     }
-//     .profile {
-//       width: 400px;
-//       height: 800px;
-//       position: relative;
-//       top: -550px;
-//       left: 40px;
-//       .name {
-//         position: absolute;
-//         top: -30px;
-//         left: -30px;
-//         margin: 20px 80px;
-//       }
-//       .from {
-//         position: absolute;
-//         top: 230px;
-//         font-size: 15px;
-//         margin:20px;
-//       }
-//       .like {
-//         position: absolute;
-//         top: 280px;
-//         font-size: 13px;
-//         margin: 20px 120px 0 20px;
-//       }
-//       .comment {
-//         position: absolute;
-//         top: 380px;
-//         font-size: 10px;
-//         margin: 20px 80px 0 20px;
-//       }
-//     }
-//   }
+  .contact {
+    .info-box {
+      left: 40px;
+    }
+    .info-box__pic {
+      top: 400px;
+      left: 170px;
+      width: 18%;
+      height: 15%;
+    }
+    .skill {
+      .can-do {
+        width: 500px;
+        position: absolute;
+        top: -20px;
+      }
+      .logos {
+        position: absolute;
+        right: -100px;
+        width: 90%;
+        height: 20%;
+      }
+      .logos-2 {
+        position: absolute;
+        top: 80px;
+        left: -30px;
+        width: 90%;
+        height: 20%;
+      }
+    }
+    .profile {
+      width: 400px;
+      height: 800px;
+      position: relative;
+      top: -550px;
+      left: 40px;
+      .name {
+        position: absolute;
+        top: -30px;
+        left: -30px;
+        margin: 20px 80px;
+      }
+      .from {
+        position: absolute;
+        top: 230px;
+        font-size: 15px;
+        margin:20px;
+      }
+      .like {
+        position: absolute;
+        top: 280px;
+        font-size: 13px;
+        margin: 20px 120px 0 20px;
+      }
+      .comment {
+        position: absolute;
+        top: 380px;
+        font-size: 10px;
+        margin: 20px 80px 0 20px;
+      }
+    }
+  }
 
-// }
-
-
-
-// @media screen and (max-height:830px)and(max-width:420px){
-//   .contact {
-//     .info-box__pic {
-//       top: 360px;
-//     }
-//     .profile {
-//       .name {
-//         top: 10px;
-//       }
-//     }
-//   }
-
-// }
+}
 
 
 
-// @media screen and (max-height:820px)and(max-width:420px){
-//   .contact {
-//     .profile {
-//       .name {
-//         left: -50px;
-//       }
-//       .comment {
-//         margin: 20px 120px 0 20px;
-//       }
-//     }
-//   }
+@media screen and (max-height:830px)and(max-width:420px){
+  .contact {
+    .info-box__pic {
+      top: 360px;
+    }
+    .profile {
+      .name {
+        top: 10px;
+      }
+    }
+  }
 
-// }
-
-
-
-// @media screen and (max-height:740px)and(max-width:415px){
-//   .header {
-//     p {
-//       top: 280px;
-//       left: 70px;
-//     }
-//   }
-
-//   .contact {
-//     .info-box__pic {
-//       height: 13%;
-//       top: 320px;
-//     }
-//     .profile {
-//       .name {
-//         top: 60px;
-//       }
-//     } 
-//   }
-
-
-// }
+}
 
 
 
-// @media screen and (max-height:670px)and(max-width:380px){
-//   .header {
-//     p {
-//       top: 250px;
-//       left: 50px;
-//     }
-//   }
+@media screen and (max-height:820px)and(max-width:420px){
+  .contact {
+    .profile {
+      .name {
+        left: -50px;
+      }
+      .comment {
+        margin: 20px 120px 0 20px;
+      }
+    }
+  }
 
-//   .works {
-//     .works-box {
-//       .chat-space {
-//         left: 85px;
-//       }
-//     }
-//   }
-
-//   .contact {
-//     .info-box__pic {
-//       height: 13%;
-//       top: 270px;
-//       left: 150px;
-//     }
-//     .skill {
-//       .logos {
-//         margin: 30px 0;
-//       }
-//       .logos-2 {
-//         margin: 0 130px;
-//       }
-//     }
-//     .profile {
-//       .name {
-//         top: 80px;
-//       }
-//     } 
-//   }
-
-// }
+}
 
 
 
-// @media screen and (max-height:640px)and(max-width:360px){
-//   .contact {
-//     .info-box__pic {
-//       top: 250px;
-//     }
-//     .profile {
-//       .name {
-//         top: 100px;
-//       }
-//     }
-//   }
+@media screen and (max-height:740px)and(max-width:415px){
+  .header {
+    p {
+      top: 280px;
+      left: 70px;
+    }
+  }
 
-// }
+  .contact {
+    .info-box__pic {
+      height: 13%;
+      top: 320px;
+    }
+    .profile {
+      .name {
+        top: 60px;
+      }
+    } 
+  }
+
+
+}
 
 
 
-// @media screen and (max-height:570px)and(max-width:320px){
-//   .header {
-//     p{
-//       font-size: 30px;
-//       top: 200px;
-//     }
-//   }
+@media screen and (max-height:670px)and(max-width:380px){
+  .header {
+    p {
+      top: 250px;
+      left: 50px;
+    }
+  }
 
-//   .works {
-//     .works-box {
-//       .chat-space {
-//         .chat-space__label {
-//           left: 20px
-//         }
-//       }
-//       .mercari {
-//         left: -75px;
-//         .mercari__label {
-//           left: 30px;
-//         }
-//         .password {
-//           width: 200px;
-//           left: 0;
-//         }
-//       }
-//     }
-//   }
+  .works {
+    .works-box {
+      .chat-space {
+        left: 85px;
+      }
+    }
+  }
 
-//   .contact {
-//     .info-box__pic {
-//       height: 10%;
-//       top: 210px;
-//       left: 130px;
-//     }
-//     .skill {
-//       .can-do {
-//         left: 30px;
-//         p {
-//           font-size: 25px;
-//         }
-//       }
-//       .logos {
-//         height: 13%;
-//         margin-top: 20px;
-//         left: 140px;
-//       }
-//       .logos-2 {
-//         height: 13%;
-//         left: -20px;
-//         top: 50px;
-//       }
-//     }
-//     .profile {
-//       .name {
-//         top: 130px;
-//         font-size: 25px;
-//       }
-//       .from {
-//         margin-top: 30px;
-//         font-size: 13px;
-//       }
-//       .like {
-//         font-size: 11px;
-//         margin: 20px 150px 0 20px;
-//       }
-//       .comment {
-//         margin: 20px 150px 0 20px;
-//       }
-//     }
-//   }
+  .contact {
+    .info-box__pic {
+      height: 13%;
+      top: 270px;
+      left: 150px;
+    }
+    .skill {
+      .logos {
+        margin: 30px 0;
+      }
+      .logos-2 {
+        margin: 0 130px;
+      }
+    }
+    .profile {
+      .name {
+        top: 80px;
+      }
+    } 
+  }
 
-// }
+}
+
+
+
+@media screen and (max-height:640px)and(max-width:360px){
+  .contact {
+    .info-box__pic {
+      top: 250px;
+    }
+    .profile {
+      .name {
+        top: 100px;
+      }
+    }
+  }
+
+}
+
+
+
+@media screen and (max-height:570px)and(max-width:320px){
+  .header {
+    p{
+      font-size: 30px;
+      top: 200px;
+    }
+  }
+
+  .works {
+    .works-box {
+      .chat-space {
+        .chat-space__label {
+          left: 20px
+        }
+      }
+      .mercari {
+        left: -75px;
+        .mercari__label {
+          left: 30px;
+        }
+        .password {
+          width: 200px;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .contact {
+    .info-box__pic {
+      height: 10%;
+      top: 210px;
+      left: 130px;
+    }
+    .skill {
+      .can-do {
+        left: 30px;
+        p {
+          font-size: 25px;
+        }
+      }
+      .logos {
+        height: 13%;
+        margin-top: 20px;
+        left: 140px;
+      }
+      .logos-2 {
+        height: 13%;
+        left: -20px;
+        top: 50px;
+      }
+    }
+    .profile {
+      .name {
+        top: 130px;
+        font-size: 25px;
+      }
+      .from {
+        margin-top: 30px;
+        font-size: 13px;
+      }
+      .like {
+        font-size: 11px;
+        margin: 20px 150px 0 20px;
+      }
+      .comment {
+        margin: 20px 150px 0 20px;
+      }
+    }
+  }
+
+}
